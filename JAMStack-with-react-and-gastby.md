@@ -1,4 +1,10 @@
-# Architecture web JAMStack avec React et Gastby.js : SEO, rapidité, sécurité, scalabilité
+# Architecture JAMStack avec React
+
+**React n'est pas SEO-friendly**. Aujourd'hui, les contenus des sites codés en React ne sont pas visibles par les moteurs de recherches dès lors qu'il y a plusieurs pages gérées par un *routeur* (un test de visite avec *google search console* affiche une page vide). 
+
+Une manière de transformer ce problème en atout majeur pour un projet est d'utiliser [**Gatsby**](https://www.gatsbyjs.org/): il permet de créer un site JAMStack avec React. Gatsby JS connaît un succès croissant et est également une entreprise qui a lever 3,8 millions de dollars En mai 2018; preuve de l'intérêt du secteur pour les avantages offerts par ce type d'architecture.
+
+## Architecture web JAMStack avec React et Gastby.js : SEO, rapidité, sécurité, scalabilité = sérénité
 
 JAMStack est une architecture web conçue pour offrir au visiteur une expérience ultra-rapide sur tous les appareils, obtenir  d'excellents résultats en SEO et pour alléger au maximum la charge de travail technique liée à la scalabilité du serveur et de la base de donnée d'un site web. Une architecture JAMStack permet également une réduction drastique voire une suppression totale des risques de piratage et des failles de sécurité.
 
@@ -11,12 +17,6 @@ On peut citer parmi les autres avantantages:
 
 ![](https://raw.githubusercontent.com/yann-yinn/why-jamstack/master/images/ligthouse.png?token=AAUeh8-GslHUXclNnzgWHf32Z1d15ELqks5cvZ2lwA%3D%3D)
 > Ci-dessus le résultat d'un audit [lighthouse](https://developers.google.com/web/tools/lighthouse) sur le site https://popcorn-nantes.github.io basé sur une architecture JAMStack
-
-## Architecture JAMStack avec React
-
-**React n'est pas SEO-friendly**. Aujourd'hui, les contenus des sites codés en React ne sont pas visibles par les moteurs de recherches dès lors qu'il y a plusieurs pages gérées par un *routeur* (un test de visite avec *google search console* affiche une page vide). 
-
-Une manière de transformer ce problème en atout majeur pour un projet est d'utiliser [**Gatsby**](https://www.gatsbyjs.org/): il permet de créer un site JAMStack avec React. Gatsby JS connaît un succès croissant et est également une entreprise qui a lever 3,8 millions de dollars En mai 2018; preuve de l'intérêt du secteur pour les avantages offerts par ce type d'architecture.
 
 ## Techniquement, comment ça marche ?
 
