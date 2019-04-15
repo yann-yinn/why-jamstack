@@ -1,4 +1,4 @@
-# Avantages d'une Architecture : SEO, rapidité, sécurité, scalabilité, sérénité
+# Avantages d'une Architecture JAMStack : SEO, rapidité, sécurité, scalabilité
 
 JAMStack est une architecture web conçue pour offrir au visiteur une expérience ultra-rapide sur tous les appareils, obtenir  d'excellents résultats en SEO et pour alléger la charge de travail technique liée à la scalabilité du serveur et de la base de donnée d'un site web. Une architecture JAMStack permet également une réduction drastique voire une suppression totale des risques de piratage et des failles de sécurité.
 
