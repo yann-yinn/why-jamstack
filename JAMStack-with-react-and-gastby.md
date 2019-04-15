@@ -25,7 +25,7 @@ On peut citer parmi les autres avantantages:
 
 ## Comment ça marche ?
 
-Contrairement à un site web classique où chaque page est *recalculée à chaque visite* en interrogeant un serveur qui lui-même interroge une ou plusieurs base(s) de données (obligeant en général la mise en place d'une infrastructure dédiée à la gestion du cache), **Gatsby génère toutes les pages à l'avance** en interrogeant les différents webservices fournisseurs de contenus et de données pour le site. Ces pages pré-générées sont spécialement optimisées pour offrir une performance maximale aux visiteurs. Il suffit ensuite placer ces pages pré-générées directement sur un "Content Delivery Network" (CDN) pour obtenir un site dont les pages sont servies de manières utra-performantes à l'échelle mondiale.
+Contrairement à un site web classique où chaque page est *recalculée à chaque visite* en interrogeant un serveur qui lui-même interroge une base de données (obligeant en général la mise en place d'une infrastructure dédiée à la gestion du cache), **Gatsby génère toutes les pages à l'avance** en interrogeant les différents webservices fournisseurs de contenus et de données pour le site. Ces pages pré-générées sont spécialement optimisées pour offrir une performance maximale aux visiteurs. Il suffit ensuite placer ces pages pré-générées directement sur un "Content Delivery Network" (CDN) pour obtenir un site dont les pages sont servies de manières utra-performantes à l'échelle mondiale.
 
 ## Considérations techniques sur Gatsby, un "Néo-GSS" 
 
