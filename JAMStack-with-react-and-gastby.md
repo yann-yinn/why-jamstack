@@ -2,9 +2,6 @@
 
 JAMStack est une architecture web conçue pour offrir au visiteur une expérience ultra-rapide sur tous les appareils, obtenir  d'excellents résultats en SEO et pour alléger au maximum la charge de travail technique liée à la scalabilité et maintenance du serveur et de la base de donnée d'un site web.
 
-![](https://raw.githubusercontent.com/yann-yinn/why-jamstack/master/images/ligthouse.png?token=AAUeh8-GslHUXclNnzgWHf32Z1d15ELqks5cvZ2lwA%3D%3D)
-> Ci-dessus le résultat d'un audit [lighthouse](https://developers.google.com/web/tools/lighthouse) sur le site https://popcorn-nantes.github.io basé sur une architecture JAMStack
-
 Une architecture JAMStack permet également :
 
 - Une prévisualisation complète du site avant publication définitive des nouveaux contenus.
@@ -14,6 +11,9 @@ Une architecture JAMStack permet également :
 - De réduire les coûts de maintenances côté serveur
 - De détecter des erreurs dans le site avant la mise en production, lors de la phase de "compilation" du site
 - Une très grande facilité à changer de prestataire d'hébergement si nécessaire : ce sont techniquement juste des fichiers statiques à uploader ailleurs en quelques minutes.
+
+![](https://raw.githubusercontent.com/yann-yinn/why-jamstack/master/images/ligthouse.png?token=AAUeh8-GslHUXclNnzgWHf32Z1d15ELqks5cvZ2lwA%3D%3D)
+> Ci-dessus le résultat d'un audit [lighthouse](https://developers.google.com/web/tools/lighthouse) sur le site https://popcorn-nantes.github.io basé sur une architecture JAMStack
 
 ## Architecture JAMStack avec React
 
