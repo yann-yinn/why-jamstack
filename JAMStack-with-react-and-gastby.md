@@ -6,7 +6,8 @@ On peut citer parmi les autres avantantages:
 
 - Préchargement des autres pages pendant la visite d'une page
 - Pouvoir revenir en un clic à la version précédente du site
-- Pouvoir faire du "A/B" testing en faisant atterir les visiteurs tantôt sur l'une ou l'autre version du site- Une prévisualisation complète du site avant publication définitive des nouveaux contenus.
+- Pouvoir faire du "A/B" testing en faisant atterir les visiteurs tantôt sur l'une ou l'autre version du site
+- Avoir une prévisualisation complète du site avant publication définitive des nouveaux contenus.
 - Détecter des erreurs dans le site avant la mise en production, grâce à la phase de "compilation" du site
 - Une très grande facilité à changer de prestataire d'hébergement si nécessaire : ce sont techniquement juste des fichiers statiques à uploader ailleurs en quelques minutes.
 
