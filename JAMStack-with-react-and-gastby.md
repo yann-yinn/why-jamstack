@@ -50,7 +50,7 @@ A noter qu'il existe de plus en plus d'hébergeurs pour automatiser toutes les �
 
 - Gatsby n'est pas optimisé pour un site qui devrait générer un million de pages toutes les 5 minutes...
 - Un site de type intranet ou back-office, qui contient uniquement des pages dont l'affichage dépend des droits et du rôle de la personne connecté, ne pourra pas être réalisé de cette manière car il n'y aura pas de page "type" à pré-générer.
-- Un site basé uniquement sur des résultats de recherche ou des filtres de recherche (ex : Airbnb) n'aura probablement pa d'intérêt à utiliser une telle technologies.
+- Un site basé uniquement sur des résultats de recherche ou des filtres de recherche (ex : Airbnb) n'aura probablement pas d'intérêt à utiliser une telle technologie.
 
 
 
