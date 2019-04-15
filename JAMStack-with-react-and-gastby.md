@@ -1,4 +1,4 @@
-# Architecture web JAMStack avec React et Gastby.js : SEO, rapidité, sécurité, scalabibilité
+# Architecture web JAMStack avec React et Gastby.js : SEO, rapidité, sécurité, scalabilité
 
 JAMStack est une architecture web conçue pour offrir au visiteur une expérience ultra-rapide sur tous les appareils, obtenir  d'excellents résultats en SEO et pour alléger au maximum la charge de travail technique liée à la scalabilité et maintenance du serveur et de la base de donnée d'un site web.
 
