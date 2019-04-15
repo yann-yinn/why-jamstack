@@ -49,7 +49,7 @@ Netlify permet auss d'uploader un dossier contenant des fonctions lambdas et les
 
 ## Les limites de JAMStack
 
-- Gatsby n'est pas optimisé pour un site qui devrait générer un million de pages toutes les 5 minutes... Cette solution convient donc mieux à des sites qui ont de quelques pages à quelques milliers de page, le temps de génération du site étant proportionnel aux nombres de pages et aux appels aux APIs à effectuer.
+Gatsby n'est pas optimisé pour un site qui devrait générer un million de pages toutes les 5 minutes... Cette solution convient donc mieux à des sites qui ont de quelques pages à quelques milliers de page, le temps de génération du site étant proportionnel aux nombres de pages et aux appels aux APIs à effectuer.
 
 ## Conclusion
 
