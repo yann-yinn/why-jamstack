@@ -18,7 +18,7 @@ On peut citer parmi les autres avantantages:
 
 **React n'est pas SEO-friendly**. Aujourd'hui, les contenus des sites codés en React ne sont pas visibles par les moteurs de recherches dès lors qu'il y a plusieurs pages gérées par un *routeur* (un test de visite avec *google search console* affiche une page vide). 
 
-Une manière de transformer ce problème en atout majeur pour un projet est d'utiliser [**Gatsby**](https://www.gatsbyjs.org/): il permet de créer un site JAMStack avec React. Gatsby JS connaît un succès croissant et est également une entreprise qui a lever 3,8 millions de dollars En mai 2018; preuve de l'intérêt du secteur pour les avantages offerts par ce type d'architecture.
+Une manière de transformer ce problème en atout majeur pour un projet est d'utiliser [**Gatsby**](https://www.gatsbyjs.org/): il permet de créer un site JAMStack avec React. Gatsby JS connaît un succès croissant et est également une entreprise qui a levé 3,8 millions de dollars En mai 2018; preuve de l'intérêt du secteur pour les avantages offerts par ce type d'architecture.
 
 ## Comment ça marche ?
 
