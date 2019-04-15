@@ -31,17 +31,9 @@ Gatsby fait partie d'une nouvelle génération de **générateur de site statiqu
 
 *Gatbsy* (ou *Gridsome* côté Vue.js) sont en quelques sorte les enfants prodiges de *Jekyll* (moteur de blog statique basé sur des fichiers markdowns), et il n'y a pas grand chose de "statique" dans un site généré par Gatsby; c'est plutôt une autre approche pour créer un site dynamique, en déportant l'intelligence d'un serveur monolitique vers des webservices et la génération dynamique du html côté JavaScript (client) pluôt que côté serveur.
 
-Le résultat produit par Gatsby est une "SPA" (single page application) : bien que toutes les pages soient prégénérées en html, dès qu'on visite une page c'est bien React qui reprend entièrement la main en "hydratant" le html, offrant ainsi une expérience en temps réel à l'utilisateur, identique à une application React classique mais avec en primer des données "pré-chargées" lors de la phase de compilation pour accélérer la navigation.
+Le résultat produit par Gatsby est une "SPA" (single page application) composés de simples fichier statiques HTML, CSS et JS. Bien que chacune des pages soient pré-générées en html, dès lors qu'on visite une page c'est bien React qui reprend entièrement la main en "hydratant" le html avec son JavaScript, offrant ainsi une expérience sans rechargement de page à l'utilisateur. C'est une expérience identique à une application React classique mais avec en prime des données "pré-chargées" lors de la phase de compilation pour accélérer la navigation.
 
-### Compilation versus interprétation
-
-Contrairement à un site web classique où chaque page est *recalculée à chaque visite* en interrogeant un serveur qui lui même interroge une base de données, **Gatsby génère toutes les pages à l'avance** en interrogeant des API pour récupérer les contenus, les produits, les utilisateurs etc. 
-
-Cette phase de "compilation" du site permet de nombreuses optimisations (poids des images, poids et chargements des CSS, JS) pour permettre le chargement le plus rapide possible de la page. Gatsby offre notamment par défaut un chargement intelligent et paresseux de chaque image, et prégénère au moment de la compilation les différentes tailles d'images pour optimiser leur vitesse d'affichage, en afficheant une version "floue" et légère de l'image pendant son chargement.
-
-Le résultat ce cette pré-compilation est un ensemble de fichier Html, CSS, et JavaScript qu'il suffit de déployer sur n'importe quel "CDN" pour obtenir des performances excellentes à une échelle mondiale et une scalabilité sans faille et sans efforts. 
-
-### déclencher la génération des pages
+### Déclencher la re-génération des pages quand il y a de nouveaux contenus
 
 A chaque changement d'un article, d'un produit, il faut "reconstruire" le site en entier pour "publier" les changements. Pour rendre cela transparent pour les rédacteurs et rédactrices de contenus, il est suffit de "pinguer" une url qui déclenchera la re-génération du site (un webhook) sur le serveur dédié au "build" du site. 
 
