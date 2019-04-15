@@ -5,7 +5,8 @@ JAMStack est une architecture web conçue pour offrir au visiteur une expérienc
 On peut citer parmi les autres avantantages: 
 
 - Préchargement des autres pages pendant la visite d'une page
-- Pouvoir revenir en un clic à la version précédente du site
+- Optimisation automatique des images (recoupe, lazy-loading et image "floue" en attendant le chargement complet)
+- Pouvoir revenir en un clic à un déploiement précédent du site
 - Pouvoir faire du "A/B" testing en faisant atterir les visiteurs tantôt sur l'une ou l'autre version du site
 - Avoir une prévisualisation complète du site avant publication définitive des nouveaux contenus.
 - Détecter des erreurs dans le site avant la mise en production, grâce à la phase de "compilation" du site
