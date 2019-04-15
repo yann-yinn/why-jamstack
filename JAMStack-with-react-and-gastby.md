@@ -29,33 +29,31 @@ Contrairement à un site web classique où chaque page est *recalculée à chaqu
 
 ## Considérations techniques sur Gatsby, un "Néo-GSS" 
 
-Gatsby fait partie d'une nouvelle génération de **générateur de site statique** (GSS), basé sur l'interrogation d'APIs et dont le html est généré à partir de librairies front-end modernes telles que React. 
-
-*Gatbsy* est en quelques sorte l'enfant prodige de *Jekyll* (moteur de blog statique basé sur des fichiers markdowns), et il n'y a pas grand chose de "statique" dans un site généré par Gatsby; c'est plutôt une autre approche pour créer un site dynamique, en déportant l'intelligence d'un serveur monolitique vers des webservices et la génération dynamique du html côté JavaScript (client) pluôt que côté serveur.
+Gatsby fait partie d'une nouvelle génération de **générateur de site statique** (GSS), basé sur l'interrogation d'APIs et dont le html est généré à partir de librairies front-end modernes telles que React.
 
 Le résultat produit par Gatsby est une "SPA" (single page application) composés de simples fichier statiques HTML, CSS et JS. Bien que chacune des pages soient pré-générées en html, dès lors qu'on visite une page c'est bien React qui reprend entièrement la main en "hydratant" le html avec son JavaScript, offrant ainsi une expérience sans rechargement de page à l'utilisateur. C'est une expérience identique à une application React classique mais avec en prime des données "pré-chargées" lors de la phase de compilation pour accélérer la navigation.
 
-### Déclencher la re-génération des pages quand il y a de nouveaux contenus
+### Déploiement et re-génération des pages quand les contenus sont mis à jour
 
-La commmande `gatsby build` permet de créer un dossier `dist` à partir du code source du site. Il suffit de déployer ce dossier `dist` pour mettre le site en ligne. Un serveur d'intégration continue peut, par exemple, être utilisé pour créer automatiquement ce build à chaque commit sur la branche `master` et automatiser le déploiement.
+La commmande `gatsby build` permet de compiler le site dans un dossier `dist`, à partir de ses fichiers (dossier `src`). Il suffit de déployer ce dossier compilé `dist` pour mettre le site en ligne. 
 
-A chaque changement de contenu, il faut "reconstruire" le site en entier pour "publier" les changements. Pour rendre cela transparent pour les rédacteurs et rédactrices de contenus, il est suffit de "pinguer" une url qui déclenchera la re-génération du site (un webhook) sur le serveur de build au moment de la création / mise à jour / suppression d'un article
+Un serveur d'intégration continue peut, par exemple, être utilisé pour créer automatiquement ce build à chaque commit sur la branche `master` et automatiser le déploiement.
 
-Cela peut prend quelques minutes pour reconstruire la version build du site. Cette phase de compilation du site a une contre-partie non négligeable : les déploiement deviennent *atomiques* : on veut dire par là que ce système permet de revenir à la version précédente du site, contenus compris, simplement en revenant à la version précédente des fichiers de build. 
+A chaque changement de contenu, il faut "reconstruire" le site en entier pour "publier" les changements. Pour rendre cela transparent pour les rédacteurs et rédactrices de contenus, il est suffit de "pinguer" une url qui déclenchera la re-génération du site sur le serveur de build au moment de la création / mise à jour / suppression d'un article  (on parle de  *webhook*)
 
-Mieux, puisque le site est désormais sous forme de "snapshots" (les différentes builds qui ont été faits), il devient facile de mettre en place des fonctionnalités habituellement complexes en jouant sur les branches git pour tester une version ou une autre du site, prévisualiser le build sur une branche à part avant publication sur le master etc... 
+Cela peut prend quelques minutes pour reconstruire la version buildée du site. Cette phase de compilation du site a une contre-partie intéressante : les déploiement deviennent *atomiques* : on veut dire par là que ce système permet de revenir à la version précédente du site, contenus compris, simplement en revenant à la version précédente des fichiers de build. 
+
+Puisque le site est désormais sous forme de "snapshots" (les différentes builds qui ont été faits), il devient possible de mettre en place des fonctionnalités habituellement complexes en jouant sur les branches git pour tester une version ou une autre du site, prévisualiser le build sur une branche à part avant publication sur le master etc... 
 
 ### Hébergeurs spécialisés JAMStack
 
-A noter qu'il existe de plus en plus d'hébergeurs pour automatiser toutes les étapes ci-dessus et les déploiements d'un site JAMStack. A partir d'un dépôt Git, *Netlify* permet par exemple de générer son site à chaque push, de rédéclencher un build par ping d'une URL, d'avoir une interface de rollback, des logs détaillés, d'avoir des branches de prévisualisation, l'A/B testing etc
+A noter qu'il existe de plus en plus d'hébergeurs pour automatiser toutes les étapes ci-dessus et les déploiements d'un site JAMStack. A partir d'un dépôt Git, [*Netlify*](https://www.netlify.com/) permet par exemple de générer son site à chaque push, de rédéclencher un build par simple ping d'une URL, d'avoir une interface de rollback, des logs détaillés, d'avoir des branches de prévisualisation, l'A/B testing etc
 
-Netlify permet aussi  d'uploader un dossier contenant des fonctions lambdas et les déploit lui même automatiquement sur AWS.
+Netlify permet aussi  d'uploader un dossier contenant des fonctions lambdas et les déploit lui même automatiquement sur AWS. 
 
 ### Les limites de JAMStack
 
-Gatsby n'est pas optimisé pour un site qui devrait générer un million de pages toutes les 5 minutes... Cette solution convient donc mieux à des sites qui ont de quelques pages à quelques milliers de page, le temps de génération du site étant proportionnel aux nombres de pages et aux appels aux APIs à effectuer.
-
-
-
+- Gatsby n'est pas optimisé pour un site qui devrait générer un million de pages toutes les 5 minutes... Cette solution convient donc mieux à des sites qui ont de quelques pages à quelques milliers de page, le temps de génération du site étant proportionnel aux nombres de pages et aux appels aux APIs à effectuer. Cette technologie ne convient donc pas à des sites dont les contenus doivent être à jour en permanence à a minute près (comme un site d'information par exemple).
+- Un site de type intranet ou back-office, qui contient uniquement des pages dont l'affichage dépend des droits de la personne connecté, ne pourra pas être réalisé de cette manière.
 
 
