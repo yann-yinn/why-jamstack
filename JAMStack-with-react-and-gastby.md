@@ -35,15 +35,17 @@ Le résultat produit par Gatsby est une "SPA" (single page application) composé
 
 ### Déclencher la re-génération des pages quand il y a de nouveaux contenus
 
-A chaque changement d'un article, d'un produit, il faut "reconstruire" le site en entier pour "publier" les changements. Pour rendre cela transparent pour les rédacteurs et rédactrices de contenus, il est suffit de "pinguer" une url qui déclenchera la re-génération du site (un webhook) sur le serveur de build au moment de la création / mise à jour / suppression d'un article
+La commmande `gatsby build` permet de créer un dossier `dist` à partir du code source du site. Il suffit de déployer ce dossier `dist` pour mettre le site en ligne. Un serveur d'intégration continue peut, par exemple, être utilisé pour créer automatiquement ce build à chaque commit sur la branche `master` et automatiser le déploiement.
 
-Cela peut prendre quelques minutes mais les temps sont généralement très raisonnables et cela offre une contre-partie non-négligeable : les déploiement deviennent *atomiques* : on veut dire par là que ce système permet de revenir à la version précédente du site, contenus compris, simplement en revenant à la version précédente des fichiers de build.
+A chaque changement de contenu, il faut "reconstruire" le site en entier pour "publier" les changements. Pour rendre cela transparent pour les rédacteurs et rédactrices de contenus, il est suffit de "pinguer" une url qui déclenchera la re-génération du site (un webhook) sur le serveur de build au moment de la création / mise à jour / suppression d'un article
 
-Mieux, puisque le site est désormais sous forme de "snapshots" (les différentes builds qui ont été faits), il devient facile de mettre en place des fonctionnalités habituellement complexes en jouant sur les branches pour tester une version ou une autre du site, prévisualiser le build sur une branche à part avant publication sur le master etc... 
+Cela peut prend quelques minutes pour reconstruire la version build du site. Cette phase de compilation du site a une contre-partie non négligeable : les déploiement deviennent *atomiques* : on veut dire par là que ce système permet de revenir à la version précédente du site, contenus compris, simplement en revenant à la version précédente des fichiers de build. 
+
+Mieux, puisque le site est désormais sous forme de "snapshots" (les différentes builds qui ont été faits), il devient facile de mettre en place des fonctionnalités habituellement complexes en jouant sur les branches git pour tester une version ou une autre du site, prévisualiser le build sur une branche à part avant publication sur le master etc... 
 
 ### Hébergeurs spécialisés JAMStack
 
-A noter qu'il existe de plus en plus d'hébergeurs pour faciliter les déploiements d'un site JAMStack. A partir d'un dépôt Git, *Netlify* permet par exemple de générer son site à chaque push, de rédéclencher un build par ping d'une URL, d'avoir une interface de rollback, des logs détaillés, d'avoir des branches de prévisualisation, l'A/B testing etc
+A noter qu'il existe de plus en plus d'hébergeurs pour automatiser toutes les étapes ci-dessus et les déploiements d'un site JAMStack. A partir d'un dépôt Git, *Netlify* permet par exemple de générer son site à chaque push, de rédéclencher un build par ping d'une URL, d'avoir une interface de rollback, des logs détaillés, d'avoir des branches de prévisualisation, l'A/B testing etc
 
 Netlify permet aussi  d'uploader un dossier contenant des fonctions lambdas et les déploit lui même automatiquement sur AWS.
 
