@@ -1,4 +1,10 @@
-# Avantages d'une Architecture JAMStack : SEO, rapidité, sécurité, scalabilité
+# Architecture JAMStack avec React et Gatsby
+
+**React n'est pas SEO-friendly**. Aujourd'hui, les contenus des sites codés en React ne sont pas visibles par les moteurs de recherches dès lors qu'il y a plusieurs pages gérées par un *routeur* (un test de visite avec *google search console* affiche une page vide). 
+
+Une manière de transformer ce problème en atout majeur pour un projet est d'utiliser [**Gatsby**](https://www.gatsbyjs.org/): il permet de créer un site JAMStack avec React. Gatsby JS connaît un succès croissant et est également une entreprise qui a levé 3,8 millions de dollars En mai 2018; preuve de l'intérêt du secteur pour les avantages offerts par ce type d'architecture.
+
+## Avantages d'une Architecture JAMStack : SEO, rapidité, sécurité, scalabilité
 
 JAMStack est une architecture web conçue pour offrir au visiteur une expérience ultra-rapide sur tous les appareils, obtenir  d'excellents résultats en SEO et pour alléger la charge de travail technique liée à la scalabilité du serveur et de la base de donnée d'un site web. Une architecture JAMStack permet également une réduction drastique voire une suppression totale des risques de piratage et des failles de sécurité.
 
@@ -15,17 +21,11 @@ On peut citer parmi les autres avantantages:
 ![](https://raw.githubusercontent.com/yann-yinn/why-jamstack/master/images/ligthouse.png?token=AAUeh8-GslHUXclNnzgWHf32Z1d15ELqks5cvZ2lwA%3D%3D)
 > Ci-dessus le résultat d'un audit [lighthouse](https://developers.google.com/web/tools/lighthouse) sur le site https://popcorn-nantes.github.io basé sur une architecture JAMStack
 
-## Architecture JAMStack avec React
-
-**React n'est pas SEO-friendly**. Aujourd'hui, les contenus des sites codés en React ne sont pas visibles par les moteurs de recherches dès lors qu'il y a plusieurs pages gérées par un *routeur* (un test de visite avec *google search console* affiche une page vide). 
-
-Une manière de transformer ce problème en atout majeur pour un projet est d'utiliser [**Gatsby**](https://www.gatsbyjs.org/): il permet de créer un site JAMStack avec React. Gatsby JS connaît un succès croissant et est également une entreprise qui a levé 3,8 millions de dollars En mai 2018; preuve de l'intérêt du secteur pour les avantages offerts par ce type d'architecture.
-
 ## Comment ça marche ?
 
 Contrairement à un site web classique où chaque page est *recalculée à chaque visite* en interrogeant un serveur qui lui-même interroge une ou plusieurs base(s) de données (obligeant en général la mise en place d'une infrastructure dédiée à la gestion du cache), **Gatsby génère toutes les pages à l'avance** en interrogeant les différents webservices fournisseurs de contenus et de données pour le site. Ces pages pré-générées sont spécialement optimisées pour offrir une performance maximale aux visiteurs. Il suffit ensuite placer ces pages pré-générées directement sur un "Content Delivery Network" (CDN) pour obtenir un site dont les pages sont servies de manières utra-performantes à l'échelle mondiale.
 
-### Considérations techniques sur Gatsby, un "Néo-GSS" 
+## Considérations techniques sur Gatsby, un "Néo-GSS" 
 
 Gatsby fait partie d'une nouvelle génération de **générateur de site statique** (GSS), basé sur l'interrogation d'APIs et dont le html est généré à partir de librairies front-end modernes telles que React. 
 
@@ -41,13 +41,13 @@ Cela peut prendre quelques minutes mais les temps sont généralement très rais
 
 Mieux, puisque le site est désormais sous forme de "snapshots" (les différentes builds qui ont été faits), il devient facile de mettre en place des fonctionnalités habituellement complexes en jouant sur les branches pour tester une version ou une autre du site, prévisualiser le build sur une branche à part avant publication sur le master etc... 
 
-## Hébergeurs spécialisés JAMStack
+### Hébergeurs spécialisés JAMStack
 
 A noter qu'il existe de plus en plus d'hébergeurs pour faciliter les déploiements d'un site JAMStack. A partir d'un dépôt Git, *Netlify* permet par exemple de générer son site à chaque push, de rédéclencher un build par ping d'une URL, d'avoir une interface de rollback, des logs détaillés, d'avoir des branches de prévisualisation, l'A/B testing etc
 
 Netlify permet auss d'uploader un dossier contenant des fonctions lambdas et les déploit lui même automatiquement sur AWS !
 
-## Les limites de JAMStack
+### Les limites de JAMStack
 
 Gatsby n'est pas optimisé pour un site qui devrait générer un million de pages toutes les 5 minutes... Cette solution convient donc mieux à des sites qui ont de quelques pages à quelques milliers de page, le temps de génération du site étant proportionnel aux nombres de pages et aux appels aux APIs à effectuer.
 
