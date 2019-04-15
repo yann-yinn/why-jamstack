@@ -1,13 +1,12 @@
 # Architecture web JAMStack avec React et Gastby.js : SEO, rapidité, sécurité, scalabilité
 
-JAMStack est une architecture web conçue pour offrir au visiteur une expérience ultra-rapide sur tous les appareils, obtenir  d'excellents résultats en SEO et pour alléger au maximum la charge de travail technique liée à la scalabilité du serveur et de la base de donnée d'un site web.
+JAMStack est une architecture web conçue pour offrir au visiteur une expérience ultra-rapide sur tous les appareils, obtenir  d'excellents résultats en SEO et pour alléger au maximum la charge de travail technique liée à la scalabilité du serveur et de la base de donnée d'un site web. Une architecture JAMStack permet également une réduction drastique voire une suppression totale des risques de piratage et des failles de sécurité.
 
-Une architecture JAMStack rend également facilement accessibles les fonctionnalités suivantes :
+On peut citer parmi les autres avantantages: 
 
-- Revenir en un clic à la version précédente du site 
-- Réduction drastique voire suppression totale des risques de piratage et des failles de sécurité
-- De faire du "A/B" testing en faisant atterir les visiteurs tantôt sur l'une ou l'autre version du site- Une prévisualisation complète du site avant publication définitive des nouveaux contenus.
-- De détecter des erreurs dans le site avant la mise en production, grâce à la phase de "compilation" du site
+- pouvoir revenir en un clic à la version précédente du site
+- Pouvoir faire du "A/B" testing en faisant atterir les visiteurs tantôt sur l'une ou l'autre version du site- Une prévisualisation complète du site avant publication définitive des nouveaux contenus.
+- Détecter des erreurs dans le site avant la mise en production, grâce à la phase de "compilation" du site
 - Une très grande facilité à changer de prestataire d'hébergement si nécessaire : ce sont techniquement juste des fichiers statiques à uploader ailleurs en quelques minutes.
 
 ![](https://raw.githubusercontent.com/yann-yinn/why-jamstack/master/images/ligthouse.png?token=AAUeh8-GslHUXclNnzgWHf32Z1d15ELqks5cvZ2lwA%3D%3D)
