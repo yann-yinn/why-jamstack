@@ -7,10 +7,10 @@ On peut citer parmi les autres avantantages:
 - Préchargement des autres pages pendant la visite d'une page
 - Optimisation automatique des images (recoupe, lazy-loading et image "floue" en attendant le chargement complet)
 - Pouvoir revenir en un clic à un déploiement précédent du site
+- Un déploiement facile et rapide : il suffit d'uploader des fichiers statiques html; CSS, et JS.
 - Pouvoir faire du "A/B" testing en faisant atterir les visiteurs tantôt sur l'une ou l'autre version du site
 - Avoir une prévisualisation complète du site avant publication définitive des nouveaux contenus.
 - Détecter des erreurs dans le site avant la mise en production, grâce à la phase de "compilation" du site
-- Une très grande facilité à changer de prestataire d'hébergement si nécessaire : ce sont techniquement juste des fichiers statiques à uploader ailleurs en quelques minutes.
 
 ![](https://raw.githubusercontent.com/yann-yinn/why-jamstack/master/images/ligthouse.png?token=AAUeh8-GslHUXclNnzgWHf32Z1d15ELqks5cvZ2lwA%3D%3D)
 > Ci-dessus le résultat d'un audit [lighthouse](https://developers.google.com/web/tools/lighthouse) sur le site https://popcorn-nantes.github.io basé sur une architecture JAMStack
