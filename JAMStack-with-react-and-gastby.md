@@ -5,7 +5,7 @@ JAMStack est une architecture web conçue pour offrir au visiteur une expérienc
 ![](https://raw.githubusercontent.com/yann-yinn/why-jamstack/master/images/ligthouse.png?token=AAUeh8-GslHUXclNnzgWHf32Z1d15ELqks5cvZ2lwA%3D%3D)
 > Ci-dessus le résultat d'un audit [lighthouse](https://developers.google.com/web/tools/lighthouse) sur le site https://popcorn-nantes.github.io basé sur une architecture JAMStack
 
-Mais ce n'est pas tout, un architecture JAMStack permet également :
+Une architecture JAMStack permet également :
 
 - Une prévisualisation complète du site avant publication définitive des nouveaux contenus.
 - De revenir en un clic à la version précédente du site 
