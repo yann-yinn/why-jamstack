@@ -4,11 +4,11 @@
 
 Une manière de transformer ce problème en atout majeur pour un projet est d'utiliser [**Gatsby**](https://www.gatsbyjs.org/): il permet de créer un site *JAMStack* avec React. 
 
-Gatsby.js connaît un succès croissant (34000 ⭐ sur [github](https://github.com/gatsbyjs/gatsby)), il est utilisé pour générer la documention de React, et c'est également maintenant une entreprise qui a levé 4 millions de dollars En mai 2018; preuve de l'intérêt du secteur informatique pour les avantages offerts par ce type d'architecture web.
+Gatsby.js connaît un succès croissant (34000 ⭐ sur [github](https://github.com/gatsbyjs/gatsby)), il est utilisé pour générer la documention de React, et c'est maintenant une entreprise qui a levé 4 millions de dollars en mai 2018; preuve de l'intérêt du secteur informatique pour les avantages offerts par ce type d'architecture web.
 
 ## Avantages d'une Architecture JAMStack : SEO, rapidité, sécurité, scalabilité
 
-JAMStack est une architecture web conçue pour offrir au visiteur une expérience ultra-rapide sur tous les appareils, obtenir  d'excellents résultats en SEO et pour alléger la charge de travail technique liée à la scalabilité du serveur et de la base de donnée d'un site web. Une architecture JAMStack permet également une réduction drastique voire une suppression totale des risques de piratage et des failles de sécurité.
+JAMStack est une *architecture web* conçue pour offrir au visiteur une expérience ultra-rapide, d'excellents résultats en SEO et qui allège énormément la charge de travail technique liée à la sécurisation et scalabilité d'un serveur web et de sa base de données. Une architecture JAMStack permet également une réduction drastique voire une suppression totale des risques de piratage et des failles de sécurité.
 
 On peut citer parmi les autres avantantages: 
 
