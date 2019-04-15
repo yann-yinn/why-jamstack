@@ -29,15 +29,15 @@ Contrairement à un site web classique où chaque page est *recalculée à chaqu
 
 Gatsby fait partie d'une nouvelle génération de **générateur de site statique** (GSS), basé sur l'interrogation d'APIs et dont le html est généré à partir de librairies front-end modernes telles que React. 
 
-*Gatbsy* (ou *Gridsome* côté Vue.js) sont en quelques sorte les enfants prodiges de *Jekyll* (moteur de blog statique basé sur des fichiers markdowns), et il n'y a pas grand chose de "statique" dans un site généré par Gatsby; c'est plutôt une autre approche pour créer un site dynamique, en déportant l'intelligence d'un serveur monolitique vers des webservices et la génération dynamique du html côté JavaScript (client) pluôt que côté serveur.
+*Gatbsy* est en quelques sorte l'enfant prodige de *Jekyll* (moteur de blog statique basé sur des fichiers markdowns), et il n'y a pas grand chose de "statique" dans un site généré par Gatsby; c'est plutôt une autre approche pour créer un site dynamique, en déportant l'intelligence d'un serveur monolitique vers des webservices et la génération dynamique du html côté JavaScript (client) pluôt que côté serveur.
 
 Le résultat produit par Gatsby est une "SPA" (single page application) composés de simples fichier statiques HTML, CSS et JS. Bien que chacune des pages soient pré-générées en html, dès lors qu'on visite une page c'est bien React qui reprend entièrement la main en "hydratant" le html avec son JavaScript, offrant ainsi une expérience sans rechargement de page à l'utilisateur. C'est une expérience identique à une application React classique mais avec en prime des données "pré-chargées" lors de la phase de compilation pour accélérer la navigation.
 
 ### Déclencher la re-génération des pages quand il y a de nouveaux contenus
 
-A chaque changement d'un article, d'un produit, il faut "reconstruire" le site en entier pour "publier" les changements. Pour rendre cela transparent pour les rédacteurs et rédactrices de contenus, il est suffit de "pinguer" une url qui déclenchera la re-génération du site (un webhook) sur le serveur dédié au "build" du site. 
+A chaque changement d'un article, d'un produit, il faut "reconstruire" le site en entier pour "publier" les changements. Pour rendre cela transparent pour les rédacteurs et rédactrices de contenus, il est suffit de "pinguer" une url qui déclenchera la re-génération du site (un webhook) sur le serveur de build au moment de la création / mise à jour / suppression d'un article
 
-Cela peut prendre quelques minutes mais les temps sont généralement très raisonnables et cela offre une contre-partie non-négligeable : les déploiement deviennent **atomique** : ça signifie que ce système permet de revenir à la version précédente du site, contenus compris, simplement en revenant à la version précédente des fichiers; ce qui devient aisé en stockant les fichiers du build sur un repo git. 
+Cela peut prendre quelques minutes mais les temps sont généralement très raisonnables et cela offre une contre-partie non-négligeable : les déploiement deviennent *atomiques* : on veut dire par là que ce système permet de revenir à la version précédente du site, contenus compris, simplement en revenant à la version précédente des fichiers de build.
 
 Mieux, puisque le site est désormais sous forme de "snapshots" (les différentes builds qui ont été faits), il devient facile de mettre en place des fonctionnalités habituellement complexes en jouant sur les branches pour tester une version ou une autre du site, prévisualiser le build sur une branche à part avant publication sur le master etc... 
 
@@ -45,15 +45,13 @@ Mieux, puisque le site est désormais sous forme de "snapshots" (les différente
 
 A noter qu'il existe de plus en plus d'hébergeurs pour faciliter les déploiements d'un site JAMStack. A partir d'un dépôt Git, *Netlify* permet par exemple de générer son site à chaque push, de rédéclencher un build par ping d'une URL, d'avoir une interface de rollback, des logs détaillés, d'avoir des branches de prévisualisation, l'A/B testing etc
 
-Netlify permet auss d'uploader un dossier contenant des fonctions lambdas et les déploit lui même automatiquement sur AWS !
+Netlify permet aussi  d'uploader un dossier contenant des fonctions lambdas et les déploit lui même automatiquement sur AWS.
 
 ### Les limites de JAMStack
 
 Gatsby n'est pas optimisé pour un site qui devrait générer un million de pages toutes les 5 minutes... Cette solution convient donc mieux à des sites qui ont de quelques pages à quelques milliers de page, le temps de génération du site étant proportionnel aux nombres de pages et aux appels aux APIs à effectuer.
 
-## Conclusion
 
-Comme tout en informatique, il s'agit d'un compromis entre différents objectifs. JAMStack est une architecture qui se concentre avant tout sur une réduction du temps de travail et des coûts concernant les problématiques de SEO, de performances, de sécurité et de scalabibilité. **Gatsby** est de son côté solution JAMStack très populaire et en pleine croissante, qui permet en outre d'avoir toute la puissance de React côté front-end.
 
 
 
