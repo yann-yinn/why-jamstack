@@ -25,7 +25,7 @@ Contrairement à un site web classique où chaque page est *recalculée à chaqu
 
 Gatsby est **générateur de site statique** basé sur l'interrogation de webservices pour obtenir contenus et données; et dont le html final est généré à partir de React. Pour le visiteur, l'expérience est toutefois bien celle d'une **SPA (single page application)**, sans rechargement de page : bien que chacune des pages soient pré-générées en html, dès lors qu'on visite une page c'est bien React qui reprend entièrement la main en [*hydratant* le html](https://www.gatsbyjs.org/blog/2018-10-15-beyond-static-intro/#hydration). C'est donc au final l'expérience d'une application React classique mais avec en prime des données "pré-chargées" lors de la phase de compilation pour accélérer la navigation.
 
-Puisqu'in fine, il s'agit d'une application React classique, cela signifie qu'il est possible de créer des routes uniquement côté client, sans qu'elles soient pré-rendu en html, comme on le ferait pour une application React classique: https://www.gatsbyjs.org/docs/building-apps-with-gatsby/#client-only-routes--user-authentication
+Puisqu'in fine, il s'agit d'une application React classique, cela signifie qu'il est possible de créer des routes uniquement côté client, sans qu'elles soient pré-rendues en html, comme on le ferait pour une application React classique: https://www.gatsbyjs.org/docs/building-apps-with-gatsby/#client-only-routes--user-authentication
 
 
 ### Déployer et re-générer les pages d'un site Gatsby
