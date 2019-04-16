@@ -8,8 +8,8 @@ On peut convertir ce problème en atout en utilisant [**Gatsby**](https://www.ga
 - Optimisation automatique du [chargement des images](https://www.gatsbyjs.org/packages/gatsby-image/).
 - Préchargement automatique des autres pages pendant la visite d'une page pour accélérer encore la navigation
 - Déploiement du site simplissime : il suffit d'uploader les fichiers statiques
-- Sécurité : il n'y a pas besoin de serveur pour faire tourner un site Gastby
-- Scalabilité sans effort ni configuration en uploadant simplement les fichiers statiques sur un CDN
+- Sécurité : pas de serveur PHP ou de CMS exposés
+- Scalabilité sans effort ni configuration en uploadant les fichiers statiques sur un CDN
 - Possibilité de prévisualiser l'ensemble d'un site avant sa publication (branche git de "preview")
 
 ![](https://raw.githubusercontent.com/yann-yinn/why-jamstack/master/images/ligthouse.png?token=AAUeh8-GslHUXclNnzgWHf32Z1d15ELqks5cvZ2lwA%3D%3D)
