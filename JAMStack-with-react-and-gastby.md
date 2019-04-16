@@ -7,7 +7,7 @@ On peut convertir ce problème en atout en utilisant [**Gatsby**](https://www.ga
 - Temps de chargement des pages ultra-rapide qui favorise le SEO
 - Optimisation automatique du [chargement des images](https://www.gatsbyjs.org/packages/gatsby-image/).
 - Préchargement automatique des autres pages pendant la visite d'une page pour accélérer encore la navigation
-- Déploiment du site simplissime et rapide : il suffit d'uploader des fichiers statiques
+- Déploiement du site simplissime : il suffit d'uploader les fichiers statiques
 - Sécurité : il n'y a pas besoin de serveur pour faire tourner un site Gastby
 - Scalabilité sans effort ni configuration en uploadant simplement les fichiers statiques sur un CDN
 - Possibilité de prévisualiser l'ensemble d'un site avant sa publication (branche git de "preview")
