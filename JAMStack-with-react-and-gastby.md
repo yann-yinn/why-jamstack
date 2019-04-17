@@ -59,10 +59,14 @@ Il possible d'utiliser un service spécialisé tel que l'excellent [Netlify](htt
 - bien d'autres choses pour épicer un site JAMStack que je vous laisse découvrir
 
 
-### Quelques limites à Gatsby
+## Limitations de Gatsby
 
 - Gatsby n'est pas optimisé pour un site qui devrait générer un million de pages toutes les 5 minutes, le temps de construction augmente au fur et à mesure du nombres de pages. Une architecture JAMStack avec Gatsby est surtout adaptée pour le moment à des projets qui n'ont pas plus de quelques milliers ou quelques dizaines milliers de page [chiffres à vérifier] dont les contenus statiques ne changent pas en permanence.
 - Il ne semble pas y avoir de solution officielle pour le multilingue, même si des astuces existent.
+
+## Exemples de sites en Gatsby
+
+- [Flamingo](https://www.shopflamingo.com/) (Boutique en ligne)
 
 
 
