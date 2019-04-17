@@ -19,4 +19,5 @@
 # Punchlines:
 
 > "Static is the new dynamic"
-- "Un site web devrait survivre à son CMS"
+
+> "Un site web devrait survivre à son CMS"
