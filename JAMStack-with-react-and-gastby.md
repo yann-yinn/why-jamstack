@@ -15,7 +15,7 @@ Parmi les avantages de Gatsby et d'une architecture JAMStack en général:
 - Possibilité de prévisualiser l'ensemble d'un site avant publication des modifications (branche git de "preview")
 
 ![](https://raw.githubusercontent.com/yann-yinn/why-jamstack/master/images/ligthouse.png?token=AAUeh8-GslHUXclNnzgWHf32Z1d15ELqks5cvZ2lwA%3D%3D)
-> Ci-dessus le résultat d'un audit [lighthouse](https://developers.google.com/web/tools/lighthouse) sur le site https://popcorn-nantes.github.io basé sur une architecture JAMStack
+> Ci-dessus le résultat d'un audit [lighthouse](https://developers.google.com/web/tools/lighthouse) sur le site https://popcorn-nantes.github.io basé sur une architecture JAMStack avec [Nuxt.js](https://nuxtjs.org/)
 
 Gatsby.js connaît un succès croissant (34000 ⭐ sur [github](https://github.com/gatsbyjs/gatsby)), c'est la technologie qui propulse la documention de React, et c'est aussi une entreprise qui a levé 4 millions de dollars en mai 2018, preuve de l'intérêt de notre industrie pour les avantages offerts par cette solution et les solutions JAMStack de manière plus générale.
 
