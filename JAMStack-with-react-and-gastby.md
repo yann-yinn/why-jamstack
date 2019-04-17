@@ -22,6 +22,7 @@ Gatsby.js connaît un succès croissant (34000 ⭐ sur [github](https://github.c
 ## Des exemples de sites en Gatsby
 
 - [La boutique en ligne Flamingo](https://www.shopflamingo.com/)
+- [Airbnb.io](https://airbnb.io/projects/)
 - [La documentation de React](https://reactjs.org/)
 
 ## Comment ça marche ?
