@@ -1,6 +1,6 @@
 # Why JAMstack ?
 
-- [Arhictecture JAMStack avec React et Gatsby](https://github.com/yann-yinn/why-jamstack/blob/master/JAMStack-with-react-and-gastby.md)
+- [Archictecture JAMStack avec React et Gatsby](https://github.com/yann-yinn/why-jamstack/blob/master/JAMStack-with-react-and-gastby.md)
 - D'autres à venir 
 
 # Articles externes (fr)
