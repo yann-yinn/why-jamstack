@@ -27,7 +27,11 @@ Ces pages pré-générées sous formes de fichiers statiques HTML, JS et CSS son
 
 ## Gatsby : un générateur de site statique nouvelle génération
 
-Gatsby est techniquement un **générateur de site statique** basé sur l'interrogation de webservices pour obtenir contenus et données; et dont le html final est généré par *React*. 
+Gatsby est techniquement un **générateur de site statique** basé sur l'interrogation de webservices pour obtenir contenus et données; et dont le html final est généré par des composants *React*. Ces données peuvent être récupérées de deux manières
+
+- En utilisant l'API graphQL locale de Gatsby nourrie par l'installation de [sources plugins](https://www.gatsbyjs.org/plugins/). Installer un plugin [gatsby-source-wordpress](https://www.gatsbyjs.org/packages/gatsby-source-wordpress/?=wordpress) rendra par exemple automatiquement disponible une API GraphQL locale permetant d'interroger un wordpress distant.
+
+- Utiliser manuellement l'API `createPages` de Gatsby en scriptant soi-même les appels aux webservices (ou toute autre source de données)
 
 Pour le visiteur, l'expérience est celle d'une **SPA (single page application)**, sans rechargement de page : bien que chacune des pages soient pré-générées en html par Gatsby, dès lors qu'on visite une page c'est bien *React* qui reprend entièrement la main en [*hydratant* le html](https://www.gatsbyjs.org/blog/2018-10-15-beyond-static-intro/#hydration). 
 
