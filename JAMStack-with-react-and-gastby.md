@@ -27,6 +27,8 @@ Ces pages pré-générées sous formes de fichiers statiques HTML, JS et CSS son
 
 ## Gatsby : un générateur de site statique nouvelle génération
 
+![récupérer des données avec Gatsby](https://raw.githubusercontent.com/yann-yinn/why-jamstack/master/images/gatsby-fetch-data.png)
+
 Gatsby est techniquement un **générateur de site statique** basé sur l'interrogation de webservices pour obtenir contenus et données; et dont le html final est généré par des composants *React*. Ces données peuvent être récupérées de deux manières
 
 - En utilisant l'API graphQL locale de Gatsby nourrie par l'installation de [sources plugins](https://www.gatsbyjs.org/plugins/). Installer un plugin [gatsby-source-wordpress](https://www.gatsbyjs.org/packages/gatsby-source-wordpress/?=wordpress) rendra par exemple automatiquement disponible dans l'API GraphQL locale les données d'un wordpress distant.
