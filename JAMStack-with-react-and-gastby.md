@@ -19,6 +19,11 @@ Parmi les avantages de Gatsby et d'une architecture JAMStack en général:
 
 Gatsby.js connaît un succès croissant (34000 ⭐ sur [github](https://github.com/gatsbyjs/gatsby)), c'est la technologie qui propulse la documentation de React, et c'est aussi une entreprise qui a levé 4 millions de dollars en mai 2018, preuve de l'intérêt de notre industrie pour les avantages offerts par cette solution et les solutions JAMStack en générale.
 
+## Des exemples de sites en Gatsby
+
+- [La boutique en ligne Flamingo](https://www.shopflamingo.com/)
+- [La documentation de React](https://reactjs.org/)
+
 ## Comment ça marche ?
 
 Contrairement à un site web classique où chaque page est *recalculée à chaque visite* en interrogeant un serveur, qui lui-même interroge une base de données; **Gatsby génère toutes les pages à l'avance** en interrogeant les différents webservices fournisseurs de contenus et de données pour le site. 
@@ -64,9 +69,6 @@ Il possible d'utiliser un service spécialisé tel que l'excellent [Netlify](htt
 - Gatsby n'est pas optimisé pour un site qui devrait générer un million de pages toutes les 5 minutes, le temps de construction augmente au fur et à mesure du nombres de pages. Une architecture JAMStack avec Gatsby est surtout adaptée pour le moment à des projets qui n'ont pas plus de quelques milliers ou quelques dizaines milliers de page [chiffres à vérifier] dont les contenus statiques ne changent pas en permanence.
 - Il ne semble pas y avoir de solution officielle pour le multilingue, même si des astuces existent.
 
-## Exemples de sites en Gatsby
-
-- [Flamingo](https://www.shopflamingo.com/) (Boutique en ligne)
 
 
 
