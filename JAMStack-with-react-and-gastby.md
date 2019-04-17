@@ -10,9 +10,9 @@ Parmi les avantages de Gatsby et d'une architecture JAMStack en général:
 - Optimisation automatique du [chargement des images](https://www.gatsbyjs.org/packages/gatsby-image/).
 - Préchargement automatique des autres pages pendant la visite d'une page pour accélérer la navigation
 - Déploiement du site simplissime : il suffit d'uploader les fichiers statiques
-- Pas de faille de sécurité : car il n'y a pas de serveur PHP ou de CMS exposé
-- Scalabilité sans effort en uploadant les fichiers statiques sur un CDN
-- Possibilité de prévisualiser l'ensemble d'un site avant sa publication (branche git de "preview")
+- Moins de faille de sécurité possibles : car il n'y a plus d'application serveur ou de CMS exposé
+- Scalabilité mondiale sans effort en uploadant les fichiers statiques directement un CDN
+- Possibilité de prévisualiser l'ensemble d'un site avant publication des modifications (branche git de "preview")
 
 ![](https://raw.githubusercontent.com/yann-yinn/why-jamstack/master/images/ligthouse.png?token=AAUeh8-GslHUXclNnzgWHf32Z1d15ELqks5cvZ2lwA%3D%3D)
 > Ci-dessus le résultat d'un audit [lighthouse](https://developers.google.com/web/tools/lighthouse) sur le site https://popcorn-nantes.github.io basé sur une architecture JAMStack
