@@ -1,5 +1,5 @@
-# Why jamstack [WIP]
-
+# Why jamstack 
 Courtes explications des avantages de JAMStack
 
-[JAMStack avec React et Gatsby](https://github.com/yann-yinn/why-jamstack/blob/master/JAMStack-with-react-and-gastby.md)
+- [JAMStack avec React et Gatsby](https://github.com/yann-yinn/why-jamstack/blob/master/JAMStack-with-react-and-gastby.md)
+- D'autres à venir 
