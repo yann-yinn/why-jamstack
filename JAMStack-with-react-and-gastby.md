@@ -42,21 +42,22 @@ Puisqu'*in fine*, il s'agit d'une application React classique, cela signifie qu'
 
 La commmande `gatsby build` permet de compiler un site Gatsby dans un dossier `dist`. Il suffit de ensuite de déployer ce dossier compilé `dist` pour mettre le site en ligne. 
 
-On peut confier cette tâche de compilation à serveur de build ou un outil d'intéhration continue pour a minima:
+On peut confier cette tâche de compilation à serveur de build / un outil d'intégration continue qui pourra:
 
-- Déclencher la re-compilation du site lorsqu'un nouveau commit à lieu sur la branche `master`
-- Exposer un webhook qui permettra re-compiler le site à distance, quand un nouveau contenu est publié sur un CMS par exemple
+- Déclencher la re-compilation puis le déploiement en production du site lorsqu'un nouveau commit à lieu sur la branche `master`
+- Exposer un *webhook* qui permettra déclencher la compilation et le déploiement du site à distance, quand un nouveau contenu est publié sur un CMS par exemple.
 
-Il possible d'utiliser un service spécialisé tel que l'excellent [Netlify](https://www.netlify.com/) qui sert de server de buil et offrent en prime d'autres fonctionnalités intéressantes comme:
+Il possible d'utiliser un service spécialisé tel que l'excellent [Netlify](https://www.netlify.com/) - spécialisé JAMStack - qui fait les choses ci-dessus avec une interface simple et claire, en offrant en prime d'autres fonctionnalités intéressantes comme:
 
 - La possibilité de rollback en un clic vers une déploiement antérieur
 - Les [branches de prévisualisations](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/) 
 - Le déploiement automatique de fonctions lambda chez AWS.
+- bien d'autres choses pour épicer un site JAMStack que je vous laisse découvrir
 
 
 ### Quelques limites à Gatsby
 
-- Gatsby n'est pas optimisé pour un site qui devrait générer un million de pages toutes les 5 minutes, le temps de construction augmente au fur et à mesure du nombres de pages.
+- Gatsby n'est pas optimisé pour un site qui devrait générer un million de pages toutes les 5 minutes, le temps de construction augmente au fur et à mesure du nombres de pages. Une architecture JAMStack avec Gatsby est surtout adaptée pour le moment à des projets qui n'ont pas plus de quelques milliers ou quelques dizaines milliers de page [chiffres à vérifier] dont les contenus statiques ne changent pas en permanence.
 - Il ne semble pas y avoir de solution officielle pour le multilingue, même si des astuces existent.
 
 
