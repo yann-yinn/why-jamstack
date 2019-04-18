@@ -67,7 +67,7 @@ Il possible d'utiliser un service spécialisé tel que l'excellent [Netlify](htt
 
 ## Limitations de Gatsby
 
-- Gatsby n'est pas optimisé pour un site qui devrait générer un million de pages toutes les 5 minutes, le temps de construction augmente au fur et à mesure du nombres de pages. Une architecture JAMStack avec Gatsby est surtout adaptée pour le moment à des projets qui n'ont pas plus de quelques milliers ou quelques dizaines milliers de page [chiffres à vérifier] dont les contenus statiques ne changent pas en permanence.
+- Gatsby n'est pas optimisé pour un site qui devrait générer un million de pages toutes les 5 minutes, le temps de construction augmente au fur et à mesure du nombres de pages. Une architecture JAMStack avec Gatsby est surtout adaptée pour le moment à des projets qui n'ont pas plus de quelques milliers ou quelques dizaines milliers de page dont les contenus statiques ne changent pas en permanence.
 - Il ne semble pas y avoir de solution officielle pour le multilingue, même si des astuces existent.
 
 
