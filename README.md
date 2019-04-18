@@ -11,7 +11,7 @@
 
 - 5 raisons de tester JAMstack : https://jamstatic.fr/2017/03/16/5-raisons-de-tester-la-jamstack/
 
-## Portfolio de sites JAMStack:
+### Portfolio de sites JAMStack:
 
 - https://www.smashingmagazine.com/
 - https://www.shopflamingo.com/
