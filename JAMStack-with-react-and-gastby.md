@@ -29,7 +29,7 @@ Gatsby.js connaît un succès croissant (34000 ⭐ sur [github](https://github.c
 
 Contrairement à un site web classique où chaque page est *recalculée à chaque visite* en interrogeant un serveur, qui lui-même interroge une base de données; **Gatsby génère toutes les pages à l'avance** en interrogeant les différents webservices fournisseurs de contenus et de données pour le site. 
 
-Ces pages pré-générées sous formes de fichiers statiques HTML, JS et CSS sont spécialement optimisées pour offrir une performance maximale aux visiteurs. Il suffit ensuite placer ces fichiers statiques directement sur un "Content Delivery Network" (CDN) pour obtenir un site dont les pages sont servies de manières performantes et facilement scalable à l'échelle mondiale.
+Ces pages pré-générées sous formes de fichiers statiques HTML, JS et CSS sont spécialement optimisées pour offrir une performance maximale aux visiteurs. Il suffit ensuite placer ces fichiers statiques directement sur un "Content Delivery Network" (CDN) pour obtenir un site dont les pages sont servies de manière performante et scalable par nature à l'échelle mondiale.
 
 ## Gatsby : un générateur de site statique nouvelle génération
 
