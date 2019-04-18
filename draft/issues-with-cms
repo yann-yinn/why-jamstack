@@ -1,8 +1,7 @@
 # Soucis souvent rencontrés avec les CMS traditionnels (Wordpress, Drupal etc)
 
 - 😓La difficulté à intégrer du HTML / CSS
-- 🐌Lents
+- 🐌Lenteur de génération d'une page
 - 🤓Requiert un haut niveau d'expertise 
-- 🏴‍☠️ piratables
-- 💣Les mises à jour parfois périlleuses
-- 🎚️Scalabilité
+- 🏴‍☠️ Stress des mises à jour de sécurité et du piratage
+- 🎚️Peu scalables par nature
